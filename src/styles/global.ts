@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0%;
   }
-  
+
   html, body, #__next {
     height: 100%;
   }
@@ -69,6 +69,13 @@ const GlobalStyles = createGlobalStyle`
       url('/fonts/gotham/gotham-htf-thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+  }
+
+  :root{
+    --black: #000;
+    --gray: #202121;
+    --pink: #F80D5A;
+    --white: #FFF;
   }
 
 `;
