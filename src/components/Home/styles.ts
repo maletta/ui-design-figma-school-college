@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 1920px;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ interface MenuBarProp {
   percent: number;
 }
 
-export const MenuBar = styled.div`
+export const MenuBar=  styled.div<MenuBarProp>`
   display: flex;
   justify-content: center;
 
@@ -40,8 +40,11 @@ export const MenuBar = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: calc(1920px); /* ver laterais */
+  width: 100%; /* ver laterais */
   height: 100%;
   padding: 0 222px 0 222px;
 
+  @media (max-width: 1600px) {
+    padding: 0 0;
+  }
 `;

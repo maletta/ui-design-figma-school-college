@@ -10,7 +10,7 @@ import { Container, MenuBar, Wrapper } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
-      <MenuBar>
+      <MenuBar percent={10}>
         <Image src={"/svgs/logo-fiap.svg"} alt="logotipo FIAP" width="64" height="64" />
       </MenuBar>
       <Wrapper>

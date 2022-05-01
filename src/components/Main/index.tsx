@@ -10,13 +10,16 @@ const Main: React.FC = () => {
   return (
     <Container>
       <Banner>
+
+        <div>
+        <p>
+        A Melhor Faculdade de Tecnologia
+        </p>
         <p>
         SOBRE
         </p>
+        </div>
 
-        <p>
-        A Melhor Faculdade
-        </p>
       </Banner>
 
       <Courses>
