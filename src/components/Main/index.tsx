@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Container, Banner,  Courses, Panel, Cards, } from './styles';
+import { Container, Banner,  Courses,
+  CoursesDetails, Cards, } from './styles';
 
 
 import Title from "../Title";
@@ -23,14 +24,35 @@ const Main: React.FC = () => {
       </Banner>
 
       <Courses>
-        <Title  title="Cursos" subtitle={"Cursos de curta duração"}/>
+        <Title  title="Cursos" subtitle={"Cursos de Curta Duração"}/>
 
-        <Tab options={["Tecnologia", "Inovação", "Negócios"]}/>
+        <Tab options={["Tecnologia", "Inovação", "Negócios"]} selected={"Tecnologia"}/>
       </Courses>
 
-      <Panel />
+      <CoursesDetails>
+        <h4>Tecnologia</h4>
 
-      {/* <FAQ>
+        <ul>
+          <li>
+            <span>Big Data Ecosystem</span>
+            <span>remoto • live</span>
+          </li>
+          <li>
+            <span>Creating Dashboards for BI</span>
+            <span>remoto • live</span>
+          </li>
+          <li>
+            <span>Big Data Science - Machine Learning & Data Mining</span>
+            <span>remoto • live + multimídia</span>
+          </li>
+          <li>
+            <span>Storytelling</span>
+            <span>remoto • live</span>
+          </li>
+        </ul>
+      </CoursesDetails>
+
+      <Title title={"FAQ"} subtitle='Dúvidas Frequentes' />
 
       <Cards>
         <div>
@@ -41,7 +63,7 @@ const Main: React.FC = () => {
           <span> LORE IPSUM </span>
         </div>
 
-        <div>
+        <div className='active'>
           <strong>
           POSSO FAZER DOIS OU MAIS CURSOS AO MESMO TEMPO?
           </strong>
@@ -81,13 +103,6 @@ const Main: React.FC = () => {
           <span>LORE IPSIUM</span>
         </div>
       </Cards>
-
-      <Marquee direction={"right"} text={"CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO."}/>
-      <Marquee direction={"left"} text={"TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO."}/>
-
-
-    <Footer /> */}
-
 
     </Container>
   )

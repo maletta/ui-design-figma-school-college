@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: max-content;
 
   display: flex;
   flex-direction: column;
@@ -19,23 +19,24 @@ export const MenuBar=  styled.div<MenuBarProp>`
   display: flex;
   justify-content: center;
 
+  position: fixed;
+  z-index: 9999;
+
   width: 100%;
   height: 80px;
 
   background-color: var(--gray);
 
-  position: relative;
-
   &::before{
     content: '';
 
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
 
     width: 100%;
     height: 2px;
-    background-image: linear-gradient(to right, var(--pink) 20%, transparent);
 
+    background-image: ${({percent}) => `linear-gradient(to right, var(--pink) ${percent}%,  transparent 0%)`};
   }
 `;
 
@@ -43,8 +44,7 @@ export const Wrapper = styled.div`
   width: 100%; /* ver laterais */
   height: 100%;
   padding: 0 222px 0 222px;
+  /* padding: 0 100px 0 100px; */
 
-  @media (max-width: 1600px) {
-    padding: 0 0;
-  }
+
 `;

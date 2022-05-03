@@ -5,6 +5,8 @@ import Main from "../Main";
 
 import { Container, MenuBar, Wrapper } from './styles';
 
+import Footer from "../Footer";
+import Marquee from "../Marquee";
 
 
 const Home: React.FC = () => {
@@ -16,6 +18,14 @@ const Home: React.FC = () => {
       <Wrapper>
         <Main />
       </Wrapper>
+
+      <Marquee direction={"slide-left"} text={"CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO."}/>
+      <Marquee direction={"slide-right"} text={"TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO."}/>
+
+    <Wrapper>
+      <Footer />
+    </Wrapper>
+
     </Container>
   )
 }

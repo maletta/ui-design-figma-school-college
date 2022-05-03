@@ -1,9 +1,24 @@
-import React from 'react';
+import styled from "styled-components";
 
-// import { Container } from './styles';
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
 
-const Title: React.FC = () => {
-  return <div />;
-}
+  font-family: Gotham HTF;
 
-export default Title;
+
+  h3 {
+    font-size: 6em;
+    font-weight: 400;
+    color: var(--white);
+  }
+
+  span {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--pink);
+
+
+  }
+
+`;
