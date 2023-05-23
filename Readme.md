@@ -38,3 +38,8 @@ Para executar o projeto:
 ---
 Obrigado por participar do nosso processo seletivo!
 Boa sorte!
+
+# Screenshots
+
+![](https://github.com/maletta/ui-design-figma-school-college/blob/main/public/images/screenshot01.png)
+![](https://github.com/maletta/ui-design-figma-school-college/blob/main/public/images/screenshot02.png)
